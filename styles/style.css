@@ -9,6 +9,7 @@
     /* margin: 0;
     padding: 0; */
 }
+
 .text-light-gray {
     color: #727272;
 }
@@ -23,6 +24,7 @@
     cursor: pointer;
     border: 0;
 }
+
 .section-title {
     color: #131313;
     font-size: 2.8rem;
@@ -77,54 +79,54 @@ nav li a {
 }
 
 
-main{
+main {
     max-width: 1440px;
     margin: 70px auto;
 }
 
 /* main styles */
-.teams-container{
+.teams-container {
     display: flex;
     align-items: center;
 }
 
-.teams-img-container{
+.teams-img-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem
 }
 
-.teams-content{
+.teams-content {
     padding-left: 70px;
     padding-right: 70px;
 }
 
-.teams-title{
+.teams-title {
     font-size: 2.8rem;
 }
 
-.teams-title .quick-list{
+.teams-title .quick-list {
     font-weight: 500;
 }
 
-.teams-title .text-features{
+.teams-title .text-features {
     color: #FF900E;
     font-weight: 700;
 }
 
 /* features section styles */
-.features{
+.features {
     margin-top: 130px;
     display: flex;
-    gap: 80px;
+    gap: 50px;
 }
 
-.features .section-title{
+.features .section-title {
     border-left: 5px solid #FF900E;
     padding-left: 20px;
 }
 
-.feature-content .card{
+.feature-content .card {
     padding: 30px;
     margin-bottom: 20px;
     border-radius: 8px;
@@ -132,12 +134,13 @@ main{
     box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
 }
 
-.feature-img img{
+.feature-img img {
     height: 90%;
-    margin-left: 90px;
+    margin-left: 80px;
+    margin-right: 30px;
 }
 
-.ten-years-badge{
+.ten-years-badge {
     border-radius: 8px;
     background: #FF900E;
     color: #fff;
@@ -148,21 +151,22 @@ main{
     bottom: 100px;
 }
 
-.ten-years-badge h2{
+.ten-years-badge h2 {
     font-size: 3rem;
     margin: 0;
 }
 
-.ten-years-badge p{
+.ten-years-badge p {
     font-size: 1rem;
 }
+
 /* facts section styles */
-.facts-card-container{
+.facts-card-container {
     display: flex;
     justify-content: space-around;
 }
 
-.facts-card-container .card{
+.facts-card-container .card {
     border-radius: 8px;
     border: 1px solid #FF900E;
     text-align: center;
@@ -170,13 +174,13 @@ main{
     padding: 30px;
 }
 
-.facts-card-container .card-title{
+.facts-card-container .card-title {
     font-weight: 600;
     font-size: 1.25rem;
     margin-top: 5px;
 }
 
-.facts-card-container .card-stats{
+.facts-card-container .card-stats {
     font-size: 2.8rem;
     color: #424242;
     margin-top: 10px;
@@ -184,11 +188,11 @@ main{
 }
 
 /* sponsors section styles */
-.sponsors{
+.sponsors {
     text-align: center;
 }
 
-.sponsors-img-container{
+.sponsors-img-container {
     margin-top: 50px;
     display: flex;
     justify-content: space-evenly;
@@ -196,61 +200,88 @@ main{
     gap: 40px;
 }
 
-.sponsors-img-container img{
+.sponsors-img-container img {
     width: 165px;
+}
+
+/* footer section styles */
+footer {
+    border-radius: 8px;
+    background: #FFF4E7;
+    margin-right: 150px;
+    margin-left: 150px;
+    margin-bottom: 50px;
+    padding: 25px;
+}
+
+footer p {
+    font-size: 15px;
+    text-align: center;
 }
 
 /* responsive media queries */
 /* mobile device */
-@media screen and (max-width: 576px){
-    header{
+@media screen and (max-width: 576px) {
+    header {
         padding: 20px;
     }
+
     nav,
     .teams-container,
     .features,
     .sponsors-img-container,
-    .facts-card-container{
+    .facts-card-container {
         flex-direction: column;
     }
 
-    .feature-img img{
+    .feature-img img {
         width: 90%;
         margin-left: 26px;
     }
 
-    .ten-years-badge{
+    .ten-years-badge {
         position: static;
         max-width: 300px;
         margin-left: 2px;
     }
+
     /* nav li{
         font-size: 15px;
     } */
 
-    .teams-img-container{
+    .teams-img-container {
         grid-template-columns: 1fr;
     }
+
     .teams-content,
-    .facts-card-container{
+    .facts-card-container {
         padding-left: 20px;
         padding-right: 20px;
     }
-    .facts-card-container{
+
+    .facts-card-container {
         gap: 20px;
     }
+    footer {
+        border-radius: 8px;
+        margin-right: 0px;
+        margin-left: 0px;
+        padding: 10px;
+        font-size: 10px;
+    }
+    
 }
 
 /* tablet or medium devices */
 @media screen and (min-width: 576px) and (max-width: 960px) {
-    header{
+    header {
         padding: 50px;
     }
+
     nav,
     .features,
     .teams-container,
-    .sponsors-img-container
-    {
+    .sponsors-img-container {
         flex-direction: column;
     }
 }

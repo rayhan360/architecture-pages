@@ -6,6 +6,8 @@
     font-family: 'Lato', sans-serif;
     font-family: 'Open Sans', sans-serif;
     font-family: 'Work Sans', sans-serif;
+    /* margin: 0;
+    padding: 0; */
 }
 
 .btn-primary {
@@ -75,6 +77,41 @@ nav li a {
     color: #727272;
 }
 
+main{
+    max-width: 1440px;
+    margin: 70px auto;
+}
+
+/* main styles */
+.teams-container{
+    display: flex;
+    align-items: center;
+}
+
+.teams-img-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem
+}
+
+.teams-content{
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+.teams-title{
+    font-size: 2.8rem;
+}
+
+.teams-title .quick-list{
+    font-weight: 500;
+    color: #727272;
+}
+
+.teams-title .text-features{
+    color: #FF900E;
+    font-weight: 700;
+}
 
 /* responsive media queries */
 /* mobile device */
